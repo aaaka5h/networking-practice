@@ -1,0 +1,13 @@
+# IntelliJ stuff
+*.iml
+.idea/
+
+# target dirs
+target/
+
+# Gradle build directory
+.gradle/
+build/
+
+# OS
+*.DS_Store

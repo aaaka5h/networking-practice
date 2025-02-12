@@ -9,5 +9,10 @@ target/
 .gradle/
 build/
 
+# output files
+*.class
+*.jar
+*.o
+
 # OS
 *.DS_Store

@@ -1,4 +1,8 @@
 #include <stdio.h>
+int multiply(int a, int b) {
+		printf("a=%d, b=%d\n", a, b);
+		return a*b;
+	}
 
 int main()
 {
@@ -8,7 +12,9 @@ int main()
 
 	j=1;
 	for (i=1; i<=num; i++)
-		j=j*i;    
+		j=multiply(j,i);    
 
 	printf("The factorial of %d is %d\n",num,j);
 }
+
+

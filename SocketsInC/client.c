@@ -51,6 +51,10 @@ int main(int argc, char *argv[])
 	}
 
 	for(p = servinfo; p != NULL; p = p->ai_next) {
+		if (p->ai_protocol != 0 && p->ai_family != 0) {
+			printf("client: protocol %d\n", p->ai_protocol);
+			printf("client: family %d\n", p->ai_family);
+		}
 		// TODO: loop through the array of addrinfo structs returned by getaddrinfo
 		// until we're able to successfully connect to one of them
 		printf("client: trying to connect...\n");
